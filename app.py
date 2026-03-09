@@ -272,7 +272,178 @@ QUESTIONS_SILVER = [
                 "c) Wenn eine Lagerung in der Maskendose möglich ist"],"correct":"b"},
 ]
 
-ALL_QUESTIONS = {"bronze": QUESTIONS_BRONZE, "silver": QUESTIONS_SILVER}
+
+# ── GOLD – Stufe 3 ────────────────────────────────────────────────────────────
+QUESTIONS_GOLD = [
+    {"id":61,"level":"gold","category":"Gerätekunde",
+     "question":"Was steht im oberen Teil der orangen Warntafel (Gefahrguttransport)?",
+     "options":["a) Gefahrnummer","b) Stoffnummer","c) Gefährliche Güternummer"],"correct":"a"},
+    {"id":62,"level":"gold","category":"Gerätekunde",
+     "question":"Was bedeutet ein \"X\" vor der Gefahrenummer?",
+     "options":["a) Es bezeichnet, dass der Stoff in gefährlicher Weise mit Wasser reagiert",
+                "b) Der Stoff kann mit Wasser in Berührung kommen",
+                "c) Der Stoff darf nicht mit Luft in Berührung kommen"],"correct":"a"},
+    {"id":63,"level":"gold","category":"Gerätekunde",
+     "question":"Wann müssen Pressluftflaschen aus Stahl von einem autorisierten Sachverständigen grundsätzlich überprüft werden?",
+     "options":["a) Alle 5 Jahre","b) Alle 6 Jahre","c) Alle 10 Jahre"],"correct":"c"},
+    {"id":64,"level":"gold","category":"Gerätekunde",
+     "question":"Zu welcher Schutzstufe gehört der gasdichte Chemikalienschutzanzug?",
+     "options":["a) Schutzstufe 1","b) Schutzstufe 3","c) Schutzstufe 2"],"correct":"a"},
+    {"id":65,"level":"gold","category":"Gerätekunde",
+     "question":"Wie groß ist die Mindestabsperrgrenze bei Gefahrguteinsätzen?",
+     "options":["a) Mindestens 10 Meter","b) 30 – 60 Meter","c) Maximal 30 Meter"],"correct":"b"},
+    {"id":66,"level":"gold","category":"Gerätekunde",
+     "question":"Welche Atemluftversorgung benötigt man bei gasdichten Chemikalienschutzanzügen?",
+     "options":["a) Pressluftatmer mit akustischer Restdruckwarnung, zusätzlich sind Druckluftschlauchgeräte möglich",
+                "b) Pressluftatmer mit manueller Restdruckwarnung und doppelten Pressluftflaschen",
+                "c) Fremdversorgung mit Restdruckwarnung"],"correct":"a"},
+    {"id":67,"level":"gold","category":"Gerätekunde",
+     "question":"Wann ist ein Schutzanzug der Schutzstufe 3 zu überprüfen?",
+     "options":["a) Nach jeder Verwendung, ansonsten jährlich",
+                "b) Nur nach Einsätzen, zusätzlich alle 2 Jahre",
+                "c) Halbjährlich"],"correct":"a"},
+    {"id":68,"level":"gold","category":"Gerätekunde",
+     "question":"In welchen Zeitabständen müssen Pressluftatmer einer Grundüberholung unterzogen werden?",
+     "options":["a) Jährlich",
+                "b) Alle 6; 9 bzw. 10 Jahre, je nach Hersteller und Type",
+                "c) Nach persönlichem Dafürhalten des Atemschutzwartes"],"correct":"b"},
+    {"id":69,"level":"gold","category":"Gerätekunde",
+     "question":"Auf welchen Mitteldruck (bar) reduziert der Druckminderer durchschnittlich den Hochdruck beim Pressluftatmer?",
+     "options":["a) 5 bis 9 bar","b) 4 bis 8 bar","c) 6 bis 9 bar"],"correct":"c"},
+    {"id":70,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wem kann der Gruppenkommandant die Bedienung des Außenüberwachungsgerätes (AÜwG) delegieren?",
+     "options":["a) Seinem Melder oder Maschinisten",
+                "b) Dem Melder des Einsatzleiters",
+                "c) Dem Strahlrohrführer"],"correct":"a"},
+    {"id":71,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Ein ASTRF hört nach 25 Minuten das akustische Warnsignal des ASTRM2. Manometer: ASTRF 70 bar, ASTRM1 110 bar, ASTRM2 85 bar. Was ist zu tun?",
+     "options":["a) Der Trupp zieht sich zurück, weil der ASTRF einen Manometerdefekt beim PA des ASTRM2 vermutet",
+                "b) Der Trupp verbleibt im Einsatz, weil die Manometerkontrolle ausreichenden Luftvorrat zeigt",
+                "c) Der Trupp setzt den Einsatz fort, bis bei allen Geräten das akustische Warnsignal anspricht"],"correct":"a"},
+    {"id":72,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wer ordnet den Beginn des Druckbelüftungsvorganges an?",
+     "options":["a) Der Atemschutztruppführer (ASTRF)","b) Der Einsatzleiter","c) Der Gruppenkommandant"],"correct":"c"},
+    {"id":73,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wofür steht die \"GAMS\" Regel der Feuerwehr?",
+     "options":["a) Gefahr erkennen, Absichern, Menschenrettung, Schutzausrüstung anlegen",
+                "b) Gefahr erkennen, Absperren, Messen, Spezialkräfte anfordern",
+                "c) Gefahr erkennen, Absperren, Menschenrettung, Spezialkräfte anfordern"],"correct":"b"},
+    {"id":74,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Was bedeutet die \"3A Regel\"?",
+     "options":["a) Abschirmung groß halten, Abstand verkürzen, Aufenthaltszeit verlängern",
+                "b) Möglichst gute Abschirmung, großen Abstand und kurze Aufenthaltszeit",
+                "c) Abschirmung entfernen, Abstand verkürzen, Aufenthaltszeit kurz halten"],"correct":"b"},
+    {"id":75,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Ein Angriffstrupp will in einen Raum mit dichtem und heißem Brandrauch vorgehen. Was ist zu tun?",
+     "options":["a) Den heißen Brandrauch sofort mit Sprühstrahl bis zur Rauchuntergrenze kühlen",
+                "b) Mit Vollstrahl den Brandherd zu treffen versuchen",
+                "c) Einige Minuten warten, wie sich die Lage entwickelt"],"correct":"a"},
+    {"id":76,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Umstände schließen einen Innenangriff aus?",
+     "options":["a) Das Gebäude ist nicht stromlos geschaltet",
+                "b) Wenn die mögliche Gefährdung des AS-Trupps nicht dafür spricht (Einsturz-, Explosionsgefahr usw.)",
+                "c) Im Gebäude befinden sich keine Menschen mehr"],"correct":"b"},
+    {"id":77,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wer gibt den Befehl für den Einsatz des Atemschutztrupps in der Löschgruppe?",
+     "options":["a) Der Gruppenkommandant","b) Der Einsatzleiter","c) Der Leiter des Atemschutzsammelplatzes"],"correct":"a"},
+    {"id":78,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Farbkennzeichnung am Flaschenhals haben Acetylengasflaschen in Österreich?",
+     "options":["a) Weiß","b) Rot","c) Kastanienbraun"],"correct":"c"},
+    {"id":79,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Mit welcher Farbe sind am Flaschenhals Druckgasflaschen für brennbare Gase, außer Acetylen, gekennzeichnet?",
+     "options":["a) Weiß","b) Rot","c) Kastanienbraun"],"correct":"b"},
+    {"id":80,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wieviel von seiner Tragfähigkeit verliert ein Stahlträger bei einer Temperatur von 700 Grad Celsius?",
+     "options":["a) Nichts","b) 25 %","c) Zwei Drittel"],"correct":"c"},
+    {"id":81,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Womit kann eine explosionsfähige Atmosphäre am Einsatzort nachgewiesen werden?",
+     "options":["a) Mit einem Explosimeter","b) Mit einem Kompressor","c) Mit einer Waage"],"correct":"a"},
+    {"id":82,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Worüber gibt die Stoffnummer (UN-Nummer) Auskunft?",
+     "options":["a) Name des Fahrzeuges","b) Über die Menge","c) Kennzeichnung des Stoffes"],"correct":"c"},
+    {"id":83,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Was ist beim Einsatz eines AS-Trupps auf dem Außenüberwachungsgerät zu notieren bzw. zu beachten?",
+     "options":["a) Einsatzleiter, Gruppenkommandant, Zeiten, Flaschendrücke, Rettungstrupp, Einsatzadresse",
+                "b) Verantwortlicher, Einsatzabschnitt, Namen der Truppmitglieder, Geräteart, Einsatzbeginn/-ende, Soll-Rückzugsdruck, niedrigste Flaschendrücke, Befehl, Lagemeldungen, Rettungstrupp und dessen niedrigsten Flaschendruck",
+                "c) Sammelplatzleiter, Einsatzleiter, Namen der Truppmitglieder, Lagemeldungen, Rettungstrupp, Zeiten, Flaschendrücke"],"correct":"b"},
+    {"id":84,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Was ist beim Erkennen von \"Gefahr in Verzug\" zu tun?",
+     "options":["a) Sofortiger Rückzug der Trupps, Meldung beim Gruppenkommandanten",
+                "b) Gruppenkommandanten fragen, ob Rückzug durchgeführt werden soll",
+                "c) Einsatzleiter Bescheid geben"],"correct":"a"},
+    {"id":85,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welcher Sicherheitsabstand ist bei der Brandbekämpfung im Bereich elektrischer Anlagen bis 1000 V beim Einsatz von C-Mehrzweckstrahlrohren mit reinem Wasser einzuhalten?",
+     "options":["a) Sprühstrahl 1 m – Vollstrahl 5 m",
+                "b) Sprühstrahl 5 m – Vollstrahl 1 m",
+                "c) Sprühstrahl 5 m – Vollstrahl 10 m"],"correct":"a"},
+    {"id":86,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welches Löschmittel darf bei Fettbränden nicht eingesetzt werden?",
+     "options":["a) Fettbrandlöscher","b) Wasser","c) Löschpulver"],"correct":"b"},
+    {"id":87,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Strahlrohreinstellung wird vorzugsweise bei Innenangriffen eingesetzt?",
+     "options":["a) Vollstrahl","b) Spülen","c) Sprühstrahl"],"correct":"c"},
+    {"id":88,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Druckzonen bilden sich bei einer Verbrennung?",
+     "options":["a) Gefährliche und ungefährliche Zone",
+                "b) Neutrale Zone, Überdruckzone, Unterdruckzone",
+                "c) Grüne, gelbe und rote Zone"],"correct":"b"},
+    {"id":89,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wann ist die komplette Einsatzbekleidung \"E1\" zu tragen?",
+     "options":["a) Bei jedem Einsatz und jeder Übung mit Brandgefahr",
+                "b) Bei jedem Einsatz",
+                "c) Nur beim Atemschutzeinsatz"],"correct":"a"},
+    {"id":90,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Wie kann man Säuredämpfe niederschlagen?",
+     "options":["a) Mit Feuerpatschen","b) Mit Wassersprühstrahl","c) Mit Laugenpulver"],"correct":"b"},
+    {"id":91,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Stoffe neigen zu Selbstentzündung?",
+     "options":["a) Phosphor, in Öl getränkte Putzwolle, feuchtes Heu",
+                "b) Benzin, Benzol, Kerosin, Teer, Bitumen",
+                "c) Seifen, Putzmittel, Bleichmittel"],"correct":"a"},
+    {"id":92,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Prüfungen hat der Atemschutzwart monatlich durchzuführen?",
+     "options":["a) Sichtkontrolle, ob die Beladung in Ordnung ist",
+                "b) Kontrolle der Atemschutzgeräte (PA, Notsignalgeber, Atemmaske und Filter), Druck der Reserveflaschen, Außenüberwachungsgerät, Wärmebildkamera",
+                "c) Sicht-, Dicht- und Funktionsprüfung"],"correct":"b"},
+    {"id":93,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Bei welchem Brand ist die Kohlenstoffmonoxidbildung besonders groß?",
+     "options":["a) Bränden in geschlossenen Räumen","b) Bei Metallbränden","c) Bei Waldbränden"],"correct":"a"},
+    {"id":94,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Bekleidung ist für die Menschenrettung bei Einsätzen mit gefährlichen Stoffen im Freien zumindest zu tragen?",
+     "options":["a) Chemikalienschutzanzug Stufe 2",
+                "b) Einsatzoverall mit Filtergerät",
+                "c) Schutzbekleidung für die Brandbekämpfung, Einmalhandschuhe, darüber Chemikalienschutzhandschuhe und chemikalienbeständige Sicherheitsstiefel, Feuerschutzhaube"],"correct":"c"},
+    {"id":95,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Bekleidung ist bei Einsätzen am Brandgeschehen zu tragen?",
+     "options":["a) Hitzeschutzanzug nach EN 1486",
+                "b) Einsatzoverall",
+                "c) Schutzbekleidung für die Brandbekämpfung nach EN 469"],"correct":"c"},
+    {"id":96,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Was versteht man unter einem Einsatzabschnitt?",
+     "options":["a) Zeitliche Einteilung in Erkundungsphase, Verteidigungs- und Angriffsphase",
+                "b) Teil einer Einsatzstelle, der von der Einsatzleitung einer Einheit zugewiesen wird",
+                "c) Bereiche an einer Einsatzstelle, in der Feuerwehren eines BFV arbeiten"],"correct":"b"},
+    {"id":97,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche giftigen Stoffe und Gefahren gehen von brennenden PVC aus?",
+     "options":["a) Salzsäuredämpfe, Bildung heißer Tropfen",
+                "b) Sichtbehinderung durch weißen Rauch und grelle Flammen",
+                "c) Unsichtbare Flammen"],"correct":"a"},
+    {"id":98,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Von wie vielen Personen darf eine 2-teilige Schiebeleiter gleichzeitig bestiegen werden?",
+     "options":["a) Max. 1 Person",
+                "b) Von 1 Person, ausgenommen bei Menschenrettung von 2 Personen (= Retter und zu rettende Person)",
+                "c) Max. 3 Personen"],"correct":"b"},
+    {"id":99,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Gegen welches gefährliche Atemgift schützt ein Filter vom Typ \"ABEK2-P3\" nicht?",
+     "options":["a) Kohlenstoffmonoxid","b) Blausäuredämpfe","c) Chlorgas"],"correct":"a"},
+    {"id":100,"level":"gold","category":"Allgemeine Fragen",
+     "question":"Welche Maßnahmen sind bei Druckgefäßen im Brandgeschehen zu treffen?",
+     "options":["a) Druckgefäße bergen und im Freien in ein Kühlbecken ablegen",
+                "b) Kennzeichnung ablesen, um Inhalt zu identifizieren",
+                "c) Aus sicherer Deckung heraus kühlen"],"correct":"c"},
+]
+
+ALL_QUESTIONS = {"bronze": QUESTIONS_BRONZE, "silver": QUESTIONS_SILVER, "gold": QUESTIONS_GOLD}
 
 
 # ── SESSION HELPERS ───────────────────────────────────────────────────────────
@@ -280,7 +451,17 @@ ALL_QUESTIONS = {"bronze": QUESTIONS_BRONZE, "silver": QUESTIONS_SILVER}
 # Store only a small list of integer indices + level string.
 
 def build_indices(lv, mode):
-    """Return a (possibly shuffled/filtered) list of indices into ALL_QUESTIONS[lv]."""
+    """Return a (possibly shuffled/filtered) list of indices into ALL_QUESTIONS[lv].
+    For lv='all', indices are encoded as (level_key, index) pairs flattened into
+    a special combined list stored separately in the session."""
+    if lv == "all":
+        # Return flat list — handled specially; we reuse q_indices as flat combined list
+        combined = []
+        for sub_lv in ("bronze", "silver", "gold"):
+            for i in range(len(ALL_QUESTIONS[sub_lv])):
+                combined.append((sub_lv, i))
+        random.shuffle(combined)
+        return combined  # list of (lv, idx) tuples
     source = ALL_QUESTIONS[lv]
     if mode == "atmung":
         idxs = [i for i, q in enumerate(source) if q["category"] == "Atmung"]
@@ -297,6 +478,14 @@ def session_questions():
     """Reconstruct the active question list from stored indices — always small."""
     lv = session.get("level", "bronze")
     idxs = session.get("q_indices", [])
+    if lv == "all":
+        result = []
+        for entry in idxs:
+            sub_lv, i = entry[0], entry[1]
+            src = ALL_QUESTIONS.get(sub_lv, [])
+            if i < len(src):
+                result.append(src[i])
+        return result
     src = ALL_QUESTIONS.get(lv, [])
     return [src[i] for i in idxs if i < len(src)]
 
@@ -326,16 +515,22 @@ BASE = """<!DOCTYPE html>
       margin-top:.5rem;border:1px solid}
     .level-pill.bronze{color:#cd7f32;border-color:rgba(205,127,50,.4);background:rgba(205,127,50,.1)}
     .level-pill.silver{color:#b0c0d4;border-color:rgba(148,163,184,.4);background:rgba(148,163,184,.1)}
+    .level-pill.gold{color:#eab308;border-color:rgba(234,179,8,.4);background:rgba(234,179,8,.1)}
+    .level-pill.all{color:#a78bfa;border-color:rgba(167,139,250,.4);background:rgba(167,139,250,.1)}
     .progress-wrap{background:#1e2433;border-radius:99px;height:6px;margin-bottom:1.5rem;overflow:hidden}
     .progress-bar{height:100%;border-radius:99px;transition:width .4s ease}
     .progress-bar.bronze{background:linear-gradient(90deg,#cd7f32,#e8a460)}
     .progress-bar.silver{background:linear-gradient(90deg,#64748b,#94a3b8)}
+    .progress-bar.gold{background:linear-gradient(90deg,#ca8a04,#eab308)}
+    .progress-bar.all{background:linear-gradient(90deg,#7c3aed,#a78bfa)}
     .progress-label{display:flex;justify-content:space-between;font-size:.78rem;color:#475569;margin-bottom:.5rem}
     .card{background:#1a2035;border:1px solid #2d3748;border-radius:14px;padding:1.8rem 2rem;margin-bottom:1.2rem}
     .category-badge{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;
       text-transform:uppercase;border-radius:99px;padding:.2rem .75rem;margin-bottom:1rem}
     .category-badge.bronze{color:#cd7f32;background:rgba(205,127,50,.1);border:1px solid rgba(205,127,50,.25)}
     .category-badge.silver{color:#94a3b8;background:rgba(148,163,184,.1);border:1px solid rgba(148,163,184,.25)}
+    .category-badge.gold{color:#eab308;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.25)}
+    .category-badge.all{color:#a78bfa;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.25)}
     .question-num{font-size:.8rem;color:#475569;margin-bottom:.4rem}
     .question-text{font-size:1.05rem;font-weight:600;line-height:1.5;color:#f1f5f9;margin-bottom:1.4rem}
     .options{display:flex;flex-direction:column;gap:.65rem}
@@ -344,6 +539,8 @@ BASE = """<!DOCTYPE html>
       text-align:left;font-size:.92rem;color:#cbd5e1;line-height:1.45;width:100%}
     .option.hb:hover:not(:disabled){border-color:#cd7f32;background:rgba(205,127,50,.07);color:#f1f5f9}
     .option.hs:hover:not(:disabled){border-color:#94a3b8;background:rgba(148,163,184,.07);color:#f1f5f9}
+    .option.hg:hover:not(:disabled){border-color:#eab308;background:rgba(234,179,8,.07);color:#f1f5f9}
+    .option.ha:hover:not(:disabled){border-color:#a78bfa;background:rgba(167,139,250,.07);color:#f1f5f9}
     .option .key{font-weight:700;color:#94a3b8;min-width:1.2rem;flex-shrink:0}
     .option.correct{border-color:#22c55e!important;background:rgba(34,197,94,.08)!important;color:#86efac!important}
     .option.correct .key{color:#22c55e}
@@ -359,12 +556,14 @@ BASE = """<!DOCTYPE html>
     .btn:active{transform:scale(.97)}
     .btn-bronze{background:#cd7f32;color:#fff}.btn-bronze:hover{opacity:.88}
     .btn-silver{background:#4b5e73;color:#e2e8f0}.btn-silver:hover{opacity:.88}
+    .btn-gold{background:#a16207;color:#fef9c3}.btn-gold:hover{opacity:.88}
+    .btn-all{background:#5b21b6;color:#ede9fe}.btn-all:hover{opacity:.88}
     .btn-ghost{background:#1e2433;color:#94a3b8;border:1px solid #2d3748}
     .btn-ghost:hover{border-color:#475569;color:#cbd5e1}
     .nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:1.2rem;gap:1rem}
     .result-card{text-align:center;padding:2.5rem}
     .result-score{font-size:4rem;font-weight:800;line-height:1;margin-bottom:.5rem}
-    .result-score.bronze{color:#cd7f32}.result-score.silver{color:#94a3b8}
+    .result-score.bronze{color:#cd7f32}.result-score.silver{color:#94a3b8}.result-score.gold{color:#eab308}.result-score.all{color:#a78bfa}
     .result-sub{font-size:1rem;color:#64748b;margin-bottom:1.5rem}
     .result-verdict{font-size:1.1rem;font-weight:600;padding:.6rem 1.4rem;border-radius:99px;display:inline-block;margin-bottom:2rem}
     .verdict-pass{background:rgba(34,197,94,.12);color:#22c55e;border:1px solid rgba(34,197,94,.3)}
@@ -383,9 +582,11 @@ BASE = """<!DOCTYPE html>
     .level-card:hover{background:#1e2433}
     .level-card.bc:hover{border-color:#cd7f32}
     .level-card.sc:hover{border-color:#94a3b8}
+    .level-card.gc:hover{border-color:#eab308}
+    .level-card.rc:hover{border-color:#a78bfa}
     .level-icon{font-size:2.5rem}
     .level-title{font-size:1.1rem;font-weight:700}
-    .bc .level-title{color:#cd7f32}.sc .level-title{color:#94a3b8}
+    .bc .level-title{color:#cd7f32}.sc .level-title{color:#94a3b8}.gc .level-title{color:#eab308}.rc .level-title{color:#a78bfa}
     .level-sub{font-size:.78rem;color:#475569}
     .mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.5rem}
     .mode-btn{background:#0f1117;border:1px solid #2d3748;border-radius:10px;padding:1rem;
@@ -397,6 +598,13 @@ BASE = """<!DOCTYPE html>
     .mode-desc{font-size:.75rem;color:#475569;margin-top:.2rem}
     .sub-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
     .sub-hdr h2{font-size:1rem;color:#94a3b8}
+    .user-card{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 1.6rem;margin-top:0}
+    .user-avatar{font-size:2.2rem;flex-shrink:0;background:#1e2433;border-radius:50%;width:3.2rem;height:3.2rem;display:flex;align-items:center;justify-content:center}
+    .user-info{display:flex;flex-direction:column;gap:.25rem;min-width:0}
+    .user-name{font-size:1rem;font-weight:700;color:#f1f5f9}
+    .user-dept{font-size:.82rem;color:#64748b}
+    .user-email{font-size:.82rem;color:#f97316;text-decoration:none;word-break:break-all}
+    .user-email:hover{text-decoration:underline}
     @media(max-width:480px){
       .card{padding:1.2rem}
       .level-grid,.mode-grid{grid-template-columns:1fr}
@@ -411,7 +619,7 @@ BASE = """<!DOCTYPE html>
     {% if level %}
       <p>Trainingsquiz</p>
       <span class="level-pill {{ level }}">
-        {{ '🥉 Stufe 1 – Bronze' if level == 'bronze' else '🥈 Stufe 2 – Silber' }}
+        {{ '🥉 Stufe 1 – Bronze' if level == 'bronze' else ('🥈 Stufe 2 – Silber' if level == 'silver' else ('🥇 Stufe 3 – Gold' if level == 'gold' else '🎲 Random – Alle Stufen')) }}
       </span>
     {% else %}
       <p>Trainingsquiz – Stufe 1 &amp; 2</p>
@@ -435,7 +643,7 @@ def index():
 <div class="card start-card">
   <div style="font-size:3rem;margin-bottom:.8rem">🧰</div>
   <h2>Wähle deine Prüfungsstufe</h2>
-  <p>Klicke auf Bronze oder Silber, um die passenden 30 Fragen zu üben.</p>
+  <p>Klicke auf Bronze, Silber oder Gold, um die passenden Fragen zu üben.</p>
   <div class="level-grid">
     <a href="/level/bronze" class="level-card bc">
       <div class="level-icon">🥉</div>
@@ -447,6 +655,24 @@ def index():
       <div class="level-title">Silber</div>
       <div class="level-sub">Stufe 2 · Fragen 31–60</div>
     </a>
+    <a href="/level/gold" class="level-card gc">
+      <div class="level-icon">🥇</div>
+      <div class="level-title">Gold</div>
+      <div class="level-sub">Stufe 3 · Fragen 61–100</div>
+    </a>
+    <a href="/start?level=all&amp;mode=shuffle" class="level-card rc">
+      <div class="level-icon">🎲</div>
+      <div class="level-title">Random</div>
+      <div class="level-sub">Alle 100 Fragen · zufällig</div>
+    </a>
+  </div>
+</div>
+<div class="card user-card">
+  <div class="user-avatar">👨‍🚒</div>
+  <div class="user-info">
+    <div class="user-name">Johannes Kainz</div>
+    <div class="user-dept">🚒 Freiwillige Feuerwehr der Stadt Fehring</div>
+    <a href="mailto:kainzjoh@icloud.com" class="user-email">kainzjoh@icloud.com</a>
   </div>
 </div>"""
     return render(body)
@@ -454,12 +680,14 @@ def index():
 
 @app.route("/level/<lv>")
 def level_page(lv):
-    if lv not in ("bronze", "silver"):
+    if lv not in ("bronze", "silver", "gold"):
         return redirect(url_for("index"))
     if lv == "bronze":
         icon, title, color, ar, gr = "🥉", "Stufe 1 – Bronze", "#cd7f32", "Fragen 1–5", "Fragen 17–30"
-    else:
+    elif lv == "silver":
         icon, title, color, ar, gr = "🥈", "Stufe 2 – Silber", "#94a3b8", "Fragen 31–39", "Fragen 53–60"
+    else:
+        icon, title, color, ar, gr = "🥇", "Stufe 3 – Gold", "#eab308", "Fragen 61–69", "Fragen 70–100"
     body = j2("""
 <div class="card start-card">
   <div class="level-icon">{{ icon }}</div>
@@ -487,7 +715,7 @@ def level_page(lv):
 @app.route("/start")
 def start():
     lv = request.args.get("level", "bronze")
-    if lv not in ("bronze", "silver"):
+    if lv not in ("bronze", "silver", "gold"):
         return redirect(url_for("index"))
     mode = request.args.get("mode", "all")
     idxs = build_indices(lv, mode)
@@ -508,7 +736,7 @@ def quiz():
     if not qs or idx >= len(qs):
         return redirect(url_for("result"))
     q = qs[idx]
-    hc = "hb" if lv == "bronze" else "hs"
+    hc = {"bronze":"hb","silver":"hs","gold":"hg"}.get(lv,"ha")
     body = j2("""
 <div class="progress-label">
   <span>Frage {{ cur + 1 }} von {{ total }}</span>
@@ -614,7 +842,7 @@ def result():
     {% endfor %}
   </div>
   <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-    <a href="/level/{{ lv }}" class="btn btn-{{ lv }}">🔄 Nochmal</a>
+    {% if lv == "all" %}<a href="/start?level=all&amp;mode=shuffle" class="btn btn-all">🔄 Nochmal (zufällig)</a>{% else %}<a href="/level/{{ lv }}" class="btn btn-{{ lv }}">🔄 Nochmal</a>{% endif %}
     <a href="/start?level={{ lv }}&amp;mode=shuffle" class="btn btn-ghost">🔀 Zufällig</a>
     <a href="/review?level={{ lv }}" class="btn btn-ghost">📋 Alle Antworten</a>
     <a href="/" class="btn btn-ghost">← Stufenwahl</a>
