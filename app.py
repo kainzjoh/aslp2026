@@ -622,7 +622,7 @@ BASE = """<!DOCTYPE html>
         {{ '🥉 Stufe 1 – Bronze' if level == 'bronze' else ('🥈 Stufe 2 – Silber' if level == 'silver' else ('🥇 Stufe 3 – Gold' if level == 'gold' else '🎲 Random – Alle Stufen')) }}
       </span>
     {% else %}
-      <p>Trainingsquiz – Stufe 1 &amp; 2</p>
+      <p>Trainingsquiz</p>
     {% endif %}
   </header>
   {{ body | safe }}
@@ -671,7 +671,7 @@ def index():
   <div class="user-avatar">👨‍🚒</div>
   <div class="user-info">
     <div class="user-name">Johannes Kainz</div>
-    <div class="user-dept">🚒 Freiwillige Feuerwehr der Stadt Fehring</div>
+    <div class="user-dept">🚒 Feuerwehr der Stadt Fehring</div>
     <a href="mailto:kainzjoh@icloud.com" class="user-email">kainzjoh@icloud.com</a>
   </div>
 </div>"""
@@ -680,7 +680,7 @@ def index():
 
 @app.route("/level/<lv>")
 def level_page(lv):
-    if lv not in ("bronze", "silver", "gold"):
+    if lv not in ("bronze", "silver", "gold", "all"):
         return redirect(url_for("index"))
     if lv == "bronze":
         icon, title, color, ar, gr = "🥉", "Stufe 1 – Bronze", "#cd7f32", "Fragen 1–5", "Fragen 17–30"
@@ -715,7 +715,7 @@ def level_page(lv):
 @app.route("/start")
 def start():
     lv = request.args.get("level", "bronze")
-    if lv not in ("bronze", "silver", "gold"):
+    if lv not in ("bronze", "silver", "gold", "all"):
         return redirect(url_for("index"))
     mode = request.args.get("mode", "all")
     idxs = build_indices(lv, mode)
